@@ -1,4 +1,5 @@
 $(function() {
+	//RESPOSNIVE MENU//////////////////////////////
 	var link = $(".menu-link");
 	var linkActive = $(".menu-link_active");
 	var menu = $(".menu");
@@ -16,7 +17,13 @@ $(function() {
 		link.toggleClass('menu-link_active');
 	});
 
-
+	//SLICK SLIDER/////////////////////////////////////////
+	$('.reviews-slider').slick({
+		infinite: true,
+	    slidesToShow: 1,
+	    arrows: true,
+	    slidesToScroll: 1
+	});
 
 
 

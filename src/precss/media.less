@@ -1,13 +1,23 @@
 /*==========  Desktop First Method  ==========*/
-@media (min-width: 610px) and (max-width: 3000px){
+@media (min-width: 666px) and (max-width: 3000px){
 	.menu-link {
+		display: none;
+	}
+	.menu {
 		display: none;
 	}
 }
 
-@media (min-width: 0px) and (max-width: 609px){
+@media (min-width: 0px) and (max-width: 666px){
 	.navigation {
 		display: none;
+	}
+	.slick-prev,
+	.slick-next {
+		display: none;
+	}
+	.item {
+		cursor: pointer !important;
 	}
 	header {
 		.header-txt {
@@ -15,5 +25,17 @@
 				font-size: 2.5rem;
 			}
 		}
+	}
+}
+
+@media (min-width: 0px) and (max-width: 720px) {
+section#main {
+	height: 1150px;
+	.main-txt {
+	margin-top: 20px !important;
+	}
+	.main-manager {
+	margin-top: 15px !important;
+	}
 	}
 }

@@ -1,5 +1,8 @@
 @import "smart-grid.less";
 @import "media.less";
+@import "slick.less";
+
+
 
 
 .reset();
@@ -73,6 +76,7 @@ section#nav {
 			padding-bottom: 38px;
 		}
 		a {
+			text-transform: uppercase;
 			color:  #ffffff;
 			font-size: 1.4rem;
 			.open_rugular;
@@ -159,6 +163,7 @@ section#nav {
 			width: 100%;
 		}
 		a {
+		text-transform: uppercase;
 		text-decoration: none;
 		display: block;
 		width: 110vw;
@@ -245,6 +250,10 @@ section#main {
 			.size-sm(12);
 			.sm-block({
 			text-align: center;
+			img {
+				height: 200px;
+				width: 200px;
+			}
 			p {
 				display: block;
 				margin: 0 auto;
@@ -295,6 +304,113 @@ section#main {
 	}
 }
 
-		// &-manager {
-		
-		// }
+//////////////REVIEWS/////////////////
+section#reviews {
+	height: 100vh;
+	min-height: 700px;
+	background-color: #f7f7f7;
+	.reviews {
+		&-row {
+			.row-flex();
+		}
+		&-txt {
+			.col();
+			.size(12);
+			.sm-block({
+				h2 {
+					padding-top: 40px;
+					font-size: 1.8rem;
+				}
+				});
+			h2 {
+				padding-top: 145px;
+				text-align: center;
+				color:  #24282f;
+				font-size: 2.404rem;
+				.raleway_semi;
+				text-transform: uppercase;
+				&:after {
+				content: "";
+				background-color: #24282f;
+				display: block;
+				width: 5rem;
+				height: 3px;
+				margin: 15px auto;
+			  }
+			}
+		}
+		&-slider {
+			position: relative;
+			margin-top: 50px;
+			.row-flex();
+			.item {
+				&:focus {
+					outline:none;
+				}
+				position: relative;
+				.col();
+				.size(12);
+				text-align: center;
+				p {
+					margin: 0 auto;
+					width: 86.2rem;
+					margin-top: 20px;
+					color:  #000000;
+					font-size: 1.4rem;
+					.open_rugular;
+				}
+				.md-block ({
+					p {
+						width: 80%;
+					}
+					});
+				.orange {
+					color:  #b5a263;
+					font-size: 1.6rem;
+					.open_semi;
+					text-transform: uppercase;
+					margin-top: 40px;
+				}
+				span {
+					display: block;
+					margin-top: 10px;
+					.open_semi;
+					text-transform: uppercase;
+					color:  #000000;
+					font-size: 1.4rem;
+				}
+				img {
+					display: block;
+					margin: 0 auto;
+				}
+			}
+		}
+	}//reviews
+}
+
+.slick-prev,
+.slick-next {
+	 position: absolute;
+	 outline: none;
+	 border: none;
+	 font-size: 0;
+     width: 20px;
+     height: 30px;
+     margin-top: 3rem;
+     background-color: transparent;
+     cursor: pointer;
+}
+
+.slick-prev {
+    background-image: url('../img/arrow-left.png');
+    background-repeat: no-repeat;
+    left: 10rem;
+    z-index: 99;
+}
+
+.slick-next {
+background-image: url('../img/arrow_right.png');
+background-repeat: no-repeat;
+right: 10rem;
+
+}
