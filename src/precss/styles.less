@@ -390,6 +390,7 @@ section#reviews {
 
 .slick-prev,
 .slick-next {
+	top: 0;
 	 position: absolute;
 	 outline: none;
 	 border: none;
@@ -413,4 +414,89 @@ background-image: url('../img/arrow_right.png');
 background-repeat: no-repeat;
 right: 10rem;
 
+}
+
+//////SECTION CONTACT//////////
+
+section#contact {
+	min-height: 300px;
+	background-color:  #2b2f35;
+	.wrapper {
+		display: flex;
+		justify-content: center;
+	}
+	.row {
+		.row-flex();
+		justify-content: center;
+	}
+	.contact-information {
+		align-items: center;
+		padding-top: 80px;
+		.col();
+		.size(4);
+		.size-sm(12);
+		.sm-block ({
+			h3 {
+				margin-top: -35px;
+				text-align: center;
+			}
+			p {
+				text-align: center;
+				margin: 20px auto;
+			}
+			input {
+				text-align: center;
+				display: block;
+				margin: 20px auto;
+			}
+			button {
+				text-align: center;
+				margin: -10px auto;
+				display: block;
+			}
+			});
+		h3 {
+			text-transform: uppercase;
+			color:  #b5a263;
+			font-size: 1.4rem;
+			.open_semi;
+		}
+		p {
+			width: 292px;
+			margin-top: 20px;
+			color:  #6e7279;
+			font-size: 1.4rem;
+			.open_rugular;
+		}
+		input {
+	  	outline: none;
+	  	margin-top: 1rem;
+	  	padding-left: 1rem;
+		background-color:  transparent;
+		border-width: 1px;
+		border-color:  #6e7279;
+		border-style: solid;
+		width: 28.7rem;
+		height: 3.5rem;
+		color:  #6e7279;
+		font-size: 1.4rem;
+		.open_rugular;
+	  }
+	  button {
+	  	margin-top: 10px;
+	  	background-color:  #b5a263;
+		width: 299px;
+		height: 37px;
+		outline: none;
+		border: none;
+		color:  #ffffff;
+		font-size: 1.4rem;
+		.open_rugular;
+		text-transform: uppercase;
+	  }
+	  input:focus:required:invalid {
+		  border: 1px solid red;
+		}
+		input:focus:valid {border-color: 1px solid green;}
+	}
 }
