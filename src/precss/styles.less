@@ -500,3 +500,57 @@ section#contact {
 		input:focus:valid {border-color: 1px solid green;}
 	}
 }
+/////FOOTER///////////////////////////
+footer {
+	min-height: 66px;
+	background-color: #24282f;
+	.row {
+		.row-flex;
+		justify-content: space-between;
+	}
+	.footer {
+		&-social {
+			padding-top: 20px;
+			text-align: center;
+			.col();
+			.size(6);
+			.size-sm (12);
+			p {
+				color:  #6e7279;
+				font-size: 1.2rem;
+				.open_semi;
+			}
+			a {
+				margin-left: 10px;
+				position: relative;
+				width: 32px;
+				height: 32px;
+				background-color: transparent;
+				display: inline-block;
+				border-radius: 50%;
+				border-width: 1px;
+				border-color:  #6e7279;
+				border-style: solid;
+				&:hover {
+					border-width: 1px;
+					border-color:  #b5a263;
+					border-style: solid;
+					background-color:  #b5a263;
+				}
+			}
+			a:hover i {
+				color: #fff;
+			}
+			i {
+				top: 8px;
+				left: 10px;
+				position: absolute;
+				color:  #6e7279;
+				font-size: 1.6rem;
+			}
+		}
+	}
+	.one {
+		padding-top: 10px;
+	}
+}
