@@ -1,16 +1,33 @@
-window.onload = function(){
-    
-    if(!checkCalc()){
-        var style = document.createElement('link');
-        style.setAttribute('rel', 'stylesheet');
-        style.setAttribute('href', 'css/styles-nocalc.css');
-        document.body.appendChild(style);
-    }
-    
-}
+$(function() {
+	var link = $(".menu-link");
+	var linkActive = $(".menu-link_active");
+	var menu = $(".menu");
+	var nav = $(".menu a");
+	
+	link.on("click", function() {
+		link.toggleClass('menu-link_active');
+		menu.toggleClass('menu-active');
+	});
+	linkActive.on("click", function() {
+		link.removeClass('menu-link_active');
+	});
+	nav.on("click", function() {
+		menu.toggleClass('menu-active');
+		link.toggleClass('menu-link_active');
+	});
 
-function checkCalc(){
-    var div = document.createElement('div');
-    div.style.cssText = 'width: calc(100%)';
-    return div.style.length > 0;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
